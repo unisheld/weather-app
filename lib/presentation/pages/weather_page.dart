@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:wapp/presentation/bloc/weather_bloc/weather_event.dart';
-import 'package:wapp/presentation/bloc/weather_bloc/weather_state.dart';
-import '../bloc/weather_bloc/weather_bloc.dart';
-import '../bloc/favorite_cities_bloc/favorite_cities_bloc.dart';
-import '../bloc/favorite_cities_bloc/favorite_cities_event.dart';
-import '../bloc/favorite_cities_bloc/favorite_cities_state.dart';
+import 'package:wapp/presentation/blocs/weather_bloc/weather_event.dart';
+import 'package:wapp/presentation/blocs/weather_bloc/weather_state.dart';
+import '../blocs/weather_bloc/weather_bloc.dart';
+import '../blocs/favorite_cities_bloc/favorite_cities_bloc.dart';
+import '../blocs/favorite_cities_bloc/favorite_cities_event.dart';
+import '../blocs/favorite_cities_bloc/favorite_cities_state.dart';
 import '../widgets/weather_info_widget.dart';
 
 class WeatherPage extends StatelessWidget {

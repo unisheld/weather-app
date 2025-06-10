@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'presentation/bloc/weather_bloc/weather_bloc.dart';
-import 'presentation/bloc/favorite_cities_bloc/favorite_cities_bloc.dart';
+import 'presentation/blocs/weather_bloc/weather_bloc.dart';
+import 'presentation/blocs/favorite_cities_bloc/favorite_cities_bloc.dart';
 import 'presentation/pages/weather_page.dart';
 import 'data/repositories/weather_repository_impl.dart';
 import 'data/datasources/weather_remote_datasource.dart';
