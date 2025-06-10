@@ -1,7 +1,7 @@
 name: wapp
-description: "A new Flutter project."
+description: "weather application"
 publish_to: 'none'
-version: 0.1.0
+version: 0.2.0
 
 environment:
   sdk: ^3.7.2
@@ -12,6 +12,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   http: ^1.4.0
   json_annotation: ^4.9.0
+  lottie: ^2.2.0
+  shared_preferences: ^2.1.1
+  
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +25,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/lottie/

@@ -1,12 +1,18 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../../core/constants.dart';
 import '../models/weather_model.dart';
 
 class WeatherRemoteDataSource {
-  final _apiKey = 'your_api_key_here'; // ApiKey openweathermap
-
   Future<WeatherModel> fetchWeather(String city) async {
-    final url = 'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$_apiKey&units=metric&lang=ru';
+
+    
+    final apiKey = AppConstants.weatherApiKey;
+
+    if (apiKey.isEmpty) {
+      throw Exception('API key is not set. Передайте ключ через --dart-define=key=твой ключ');
+    }    
+    final url = 'https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric&lang=ru';
     final response = await http.get(Uri.parse(url));
 
     if (response.statusCode == 200) {
